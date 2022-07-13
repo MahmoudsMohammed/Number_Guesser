@@ -1,0 +1,63 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../static/guess.jpg');
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+  }
+}
+/* end main rules */
+
+/* start styling */
+.container h1 {
+  font-weight: normal;
+  margin: 0px;
+}
+.container p:not(:last-of-type) {
+  font-size: 16px;
+  font-weight: 300;
+  color: #777;
+}
+.container input {
+  border: 1px solid #777;
+  padding: 10px;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.container input:focus {
+  outline: none;
+}
+.container button {
+  display: block;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-weight: 400;
+  background-color: #777;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+}
+input + p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 15px auto ;
+  color: red;
+  text-align: center;
+}
+/* end styling */
